@@ -441,17 +441,17 @@
     
     
     
-    <div class="tab-nav-container row w-25">
-        <div id="home" class="tab purple">
+    <div class="tab-nav-container row w-50">
+        <div id="home" class="tab purple col-2">
             <i class="far fa-address-card"></i>
             <p class="p">XP</p>
         </div>
-        <div id="likes" class="tab active pink">
+        <div id="likes" class="tab active pink col-2">
             <i class="far fa-user"></i>
             <p class="p">About</p>
         </div>
         
-        <div id="profile" class="tab teal">
+        <div id="profile" class="tab teal col-2">
             <i class="fas fa-briefcase"></i>
             <p class="p">Work</p>
         </div>
@@ -469,20 +469,24 @@ tabs.forEach(clickedTab => {
         // Remove the active class from all the tabs (this acts as a "hard" reset)
         tabs.forEach(tab => {
             tab.classList.remove('active');
+           
         });
 
         // Add the active class on the clicked tab
         clickedTab.classList.add('active');
-
+        
         
 
         if($("#likes").hasClass("active")){
+          
 	$("#London").hide();
 	$("#Paris").show();
 	$("#Tokyo").hide();
+ 
 }
 
 if($("#home").hasClass("active")){
+ 
 	$("#London").show();
 	$("#Paris").hide();
 	$("#Tokyo").hide();
@@ -490,6 +494,7 @@ if($("#home").hasClass("active")){
 	
 
 if($("#profile").hasClass("active")){
+
 	$("#London").hide();
 	$("#Paris").hide();
 	$("#Tokyo").show();
@@ -510,6 +515,7 @@ if($("#profile").hasClass("active")){
 });
 
 if($("#likes").hasClass("active")){
+  $("i").removeProp("color");
 	$("#London").hide();
 	$("#Paris").show();
 	$("#Tokyo").hide();
