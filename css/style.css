@@ -21,11 +21,11 @@ body {
 }
 .container-x:after {
   background-color: #BCED2E;
-  content: "";
+  
   height: 10px;
   position: absolute;
   top: 390px;
-  width: 100%;
+  width: 0px;
 }
 .container-x:hover {
   transform: scale(0.54);
@@ -82,7 +82,7 @@ body {
   width: 160px;
 }
 .name-x {
-  color: #fff;
+  color: #000;
   font-family: 'Roboto Mono', monospace;
   font-size: 36px;
   font-weight: 600;
