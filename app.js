@@ -15,7 +15,8 @@
         
         function activate(){
             setTimeout(function(){
-                $scope.link = "https://assets.lybrate.com/q_auto:eco,f_auto,w_850/imgs/product/health-wiki/bpages/Benefits-Of-Turmeric.jpg"
+                $scope.link = "https://assets.lybrate.com/q_auto:eco,f_auto,w_850/imgs/product/health-wiki/bpages/Benefits-Of-Turmeric.jpg";
+                alert("fired");
             }, 1000);
  
         }
