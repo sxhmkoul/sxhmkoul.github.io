@@ -18,7 +18,7 @@
                 var imagex = document.getElementsByClassName("load-delay")[0];
             var imgOriginal = imagex.dataset['original'];
             imagex.setAttribute('src', imgOriginal);
-            }, 3000);
+            }, 1000);
  
         }
         activate();
