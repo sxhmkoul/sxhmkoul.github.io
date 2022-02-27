@@ -12,6 +12,7 @@
         $scope.val = "";
         $scope.increment = 0;
         $scope.counter = 0;
+        $scope.link = "https://assets.lybrate.com/q_auto:eco,f_auto,w_850/imgs/product/health-wiki/bpages/Benefits-Of-Turmeric.jpg";
 
 
 
