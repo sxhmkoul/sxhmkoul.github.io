@@ -12,18 +12,13 @@
         $scope.val = "";
         $scope.increment = 0;
         $scope.counter = 0;
-        $scope.link = "https://assets.lybrate.com/q_auto:eco,f_auto,w_850/imgs/product/health-wiki/bpages/Benefits-Of-Turmeric.jpg";
-
-
-
+        setTimeout(function(){ $scope.link = "https://assets.lybrate.com/q_auto:eco,f_auto,w_850/imgs/product/health-wiki/bpages/Benefits-Of-Turmeric.jpg" }, 2000);
+ 
         $scope.clickBtn = function(){
             $scope.lunchChecker();
             $scope.validatorFun();
-            
-        }
-
-
-
+           }
+        
         $scope.validateKey = function(){
            var len = $scope.lunchMenu.length;
            $scope.counter = len;
@@ -44,8 +39,5 @@
             } else $scope.result = "Enjoy!";
 
         }
-
-
-
     }
 })();
