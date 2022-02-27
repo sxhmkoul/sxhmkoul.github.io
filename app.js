@@ -15,8 +15,8 @@
         
         function activate(){
             setTimeout(function(){
-                var imagex = document.getElementsbyClassName("load-delay")[0];
-            var imgOriginal = imagex.data('original');
+                var imagex = document.getElementsByClassName("load-delay")[0];
+            var imgOriginal = imagex.dataset['original'];
             imagex.setAttribute('src', imgOriginal);
             }, 3000);
  
